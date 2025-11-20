@@ -5,22 +5,22 @@
 class Sls < Formula
   desc "A smart fuzzy CLI selector for SSH config hosts"
   homepage "https://github.com/jinmugo/sls"
-  version "0.1.1"
+  version "0.2.3"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jinmugo/sls/releases/download/0.1.1/sls_Darwin_x86_64.tar.gz"
-      sha256 "50bcb483d866d04a02eff58644cf6e45c6bda220ebe98f1ee4071418cbdef716"
+      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Darwin_x86_64.tar.gz"
+      sha256 "982f85eea4c353847521f35f03997954a8f1646fa34b4fd016c3186441e22838"
 
       def install
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jinmugo/sls/releases/download/0.1.1/sls_Darwin_arm64.tar.gz"
-      sha256 "8414f2b163e274ecc589cca4d74f11dcfba9de58c99dc35f36ed91d77427ade9"
+      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Darwin_arm64.tar.gz"
+      sha256 "e897f7f7f2a98d03c6df009b676adbc317b4cdb73719b25e5105b9a743d824f3"
 
       def install
         bin.install "sls"
@@ -29,16 +29,16 @@ class Sls < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/0.1.1/sls_Linux_x86_64.tar.gz"
-      sha256 "396002ec87f7c08d7330de3c159e445ecb12011439cb6cf0f94030c741fdc202"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Linux_x86_64.tar.gz"
+      sha256 "045d50cff7a6904ffa490eedfa6d87795bd66c15132f130730d52036be7152c5"
       def install
         bin.install "sls"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/0.1.1/sls_Linux_arm64.tar.gz"
-      sha256 "296eb7f01968787627f102d54c593dd5b0f3717dbc5babf57be3692f0ec4acca"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Linux_arm64.tar.gz"
+      sha256 "5d7a9da902cf47c97a15b684315be80bbddabb012955905079342ec45eaba237"
       def install
         bin.install "sls"
       end
