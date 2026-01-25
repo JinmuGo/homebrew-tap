@@ -5,22 +5,22 @@
 class Sls < Formula
   desc "A smart fuzzy CLI selector for SSH config hosts"
   homepage "https://github.com/jinmugo/sls"
-  version "0.2.3"
+  version "0.3.0"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Darwin_x86_64.tar.gz"
-      sha256 "982f85eea4c353847521f35f03997954a8f1646fa34b4fd016c3186441e22838"
+      url "https://github.com/jinmugo/sls/releases/download/v0.3.0/sls_Darwin_x86_64.tar.gz"
+      sha256 "01c262522c45d8d466df82fb428756aae3797b42e19ca5124c07352e12ceb921"
 
       def install
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Darwin_arm64.tar.gz"
-      sha256 "e897f7f7f2a98d03c6df009b676adbc317b4cdb73719b25e5105b9a743d824f3"
+      url "https://github.com/jinmugo/sls/releases/download/v0.3.0/sls_Darwin_arm64.tar.gz"
+      sha256 "efa4b91a129c33a68a75e55d5e7c1ccf8681052608438149be00330e4f0e67b2"
 
       def install
         bin.install "sls"
@@ -30,15 +30,15 @@ class Sls < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Linux_x86_64.tar.gz"
-      sha256 "045d50cff7a6904ffa490eedfa6d87795bd66c15132f130730d52036be7152c5"
+      url "https://github.com/jinmugo/sls/releases/download/v0.3.0/sls_Linux_x86_64.tar.gz"
+      sha256 "cf8851666ccdeffd52fd827c4d0ccd57afa6b8cf96feaa82f044676a04499971"
       def install
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v0.2.3/sls_Linux_arm64.tar.gz"
-      sha256 "5d7a9da902cf47c97a15b684315be80bbddabb012955905079342ec45eaba237"
+      url "https://github.com/jinmugo/sls/releases/download/v0.3.0/sls_Linux_arm64.tar.gz"
+      sha256 "d88223f944756c5cdc862c562432f69e7fba847981a92e3f3958bb5b29b6796c"
       def install
         bin.install "sls"
       end
