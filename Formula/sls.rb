@@ -5,24 +5,24 @@
 class Sls < Formula
   desc "A smart fuzzy CLI selector for SSH config hosts"
   homepage "https://github.com/jinmugo/sls"
-  version "0.3.1"
+  version "0.4.0"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jinmugo/sls/releases/download/v0.3.1/sls_Darwin_x86_64.tar.gz"
-      sha256 "f889e0a469d2ee50f7351a1f11c7db253df5ef9ea7ae9c09b080572f8f2848f3"
+      url "https://github.com/jinmugo/sls/releases/download/v0.4.0/sls_Darwin_x86_64.tar.gz"
+      sha256 "073fc8983b864c2dcfce0b0f695b1903c214b1dd98d59abbc0966097e792d70a"
 
-      def install
+      define_method(:install) do
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jinmugo/sls/releases/download/v0.3.1/sls_Darwin_arm64.tar.gz"
-      sha256 "c269c75572dd6577573a470e5b35f8fd6a8bd46479d95c1a592577575ab87a7f"
+      url "https://github.com/jinmugo/sls/releases/download/v0.4.0/sls_Darwin_arm64.tar.gz"
+      sha256 "5be6104fe2496274769e668c070f98ec77d40407375ea70088ec13f4168cb348"
 
-      def install
+      define_method(:install) do
         bin.install "sls"
       end
     end
@@ -30,16 +30,16 @@ class Sls < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v0.3.1/sls_Linux_x86_64.tar.gz"
-      sha256 "e1c78695b289e52988f5932aa7117f297530d07f6c0437b46644e2b09a1f9cf2"
-      def install
+      url "https://github.com/jinmugo/sls/releases/download/v0.4.0/sls_Linux_x86_64.tar.gz"
+      sha256 "3bcf8a9facb9ed1f66608957f7ac7b088b52ce6588ea57902d5a90192811c81d"
+      define_method(:install) do
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v0.3.1/sls_Linux_arm64.tar.gz"
-      sha256 "26a73c74e2ef34351b49951b881b06b8af14fda523878f92794ca23e52ca6ffa"
-      def install
+      url "https://github.com/jinmugo/sls/releases/download/v0.4.0/sls_Linux_arm64.tar.gz"
+      sha256 "9841f96575cda8c0fc95cd0d6b348a7b1b767568656640458e9c690c6ebc2797"
+      define_method(:install) do
         bin.install "sls"
       end
     end
