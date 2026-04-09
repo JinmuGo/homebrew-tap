@@ -5,22 +5,22 @@
 class Sls < Formula
   desc "A smart fuzzy CLI selector for SSH config hosts"
   homepage "https://github.com/jinmugo/sls"
-  version "1.1.0"
+  version "1.1.1"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jinmugo/sls/releases/download/v1.1.0/sls_Darwin_x86_64.tar.gz"
-      sha256 "f6030238a197f751e84102b1b37aca0a0abebb300f64bd160426652ac7504191"
+      url "https://github.com/jinmugo/sls/releases/download/v1.1.1/sls_Darwin_x86_64.tar.gz"
+      sha256 "5e1df2dfcf2edb7dde69529ce7dd45cdb05a6516d0a7ba9b0e76ece3a0e48ed7"
 
       define_method(:install) do
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jinmugo/sls/releases/download/v1.1.0/sls_Darwin_arm64.tar.gz"
-      sha256 "67b6ba571c6be6e364d07e94753cfc152f2ab33ea3ff061e2cba1b1e526983b5"
+      url "https://github.com/jinmugo/sls/releases/download/v1.1.1/sls_Darwin_arm64.tar.gz"
+      sha256 "9981e8ab30e9cdef39b3225b93705834425aea91b420ca91b407da43b6272876"
 
       define_method(:install) do
         bin.install "sls"
@@ -30,15 +30,15 @@ class Sls < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v1.1.0/sls_Linux_x86_64.tar.gz"
-      sha256 "0634b499f428ec0f58447a2034ff59925cc30672b30124a4650d3cd56fb5f880"
+      url "https://github.com/jinmugo/sls/releases/download/v1.1.1/sls_Linux_x86_64.tar.gz"
+      sha256 "a1ca41fcf68b993ee6fd50aad54cdc1b1b86e935179a52564e2ed43e8f7230da"
       define_method(:install) do
         bin.install "sls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jinmugo/sls/releases/download/v1.1.0/sls_Linux_arm64.tar.gz"
-      sha256 "2482d32767df3ccd22e43429d1fb8a9fca021be9d21710adce78aaa0922155f1"
+      url "https://github.com/jinmugo/sls/releases/download/v1.1.1/sls_Linux_arm64.tar.gz"
+      sha256 "25f036923092ad70dc684b55ec1fac747c37128ba30318e405bbd89fbb575a5e"
       define_method(:install) do
         bin.install "sls"
       end
