@@ -12,9 +12,9 @@ brew tap JinmuGo/tap
 
 | Package | Description | Install |
 |---------|-------------|---------|
-| **sls** | SSH config host selector | `brew install JinmuGo/tap/sls` |
-| **cinch** | Remote clipboard CLI | `brew install JinmuGo/tap/cinch` |
-| **cinch** (cask) | Remote clipboard macOS app | `brew install --cask JinmuGo/tap/cinch` |
+| [**sls**](https://github.com/jinmugo/sls) | SSH config host selector | `brew install JinmuGo/tap/sls` |
+| [**cinch**](https://github.com/JinmuGo/cinch) | Remote clipboard CLI | `brew install JinmuGo/tap/cinch` |
+| [**cinch** (cask)](https://github.com/JinmuGo/cinch) | Remote clipboard macOS app | `brew install --cask JinmuGo/tap/cinch` |
 
 ## License
 
