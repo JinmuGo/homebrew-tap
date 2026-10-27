@@ -6,25 +6,25 @@ cask "dr" do
     end
   end
 
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     on_arm do
-      sha256 "b539d1ff28c89c98d5c5f3f019b329692895fe3b47b02e94ea8bfefa5e25ba91"
+      sha256 "414d721a6037cafc3bf5862c44b44ae3d4b4493c9ed861ef24f7285bbe752a65"
       url "https://github.com/JinmuGo/dr/releases/download/v#{version}/dr_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c4fbc1fb3676c37a46f4a286be40b339f8503bb755b07d160e29807a98b1e6f5"
+      sha256 "5a5de3b6d4bc24b9fcb379bc8407ede61ee27bdb4fd64dd3e57c79739e8f6a18"
       url "https://github.com/JinmuGo/dr/releases/download/v#{version}/dr_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b36921af30d6c8f4b1148fc289663d2fc6ad4b1b73940dbc6453471e28f6ead9"
+      sha256 "47bd84de43aa0eda497bc13fd9c51f9658fac541f1c622104e78b5c7acbb92c4"
       url "https://github.com/JinmuGo/dr/releases/download/v#{version}/dr_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8983587da7378d38412eb0de24c6f8e35735d8cb3d5f6bfdba1fe2e2afd7e1d2"
+      sha256 "451446f1c0ccc8b79b7e31b3e136f80fbf77475e8e7ab56392b66003097ebf35"
       url "https://github.com/JinmuGo/dr/releases/download/v#{version}/dr_Linux_x86_64.tar.gz"
     end
   end
